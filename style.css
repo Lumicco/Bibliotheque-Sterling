@@ -1,0 +1,157 @@
+body
+{
+    min-width: 500px;
+}
+
+/*LOGO SIZE*/
+.logo
+{
+    height: 100px;
+    width: auto;
+}
+
+.navbar-brand
+{
+    font-size: 1em;
+    font-style: italic;
+}
+
+.navbar
+{
+    font-size: 1.8em;
+}
+
+.navbar-item
+{
+    font-size: 0.6em;
+    white-space: nowrap;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+{
+    filter: invert(100%);
+}
+
+.card
+{
+    width: 265px;
+    height: 380px;
+    margin: 10px;
+}
+
+.card-img-top
+{
+    padding-top: 20px;
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-body
+{
+    text-align: center;
+    position: relative;
+}
+
+.card-body h1
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-body button
+{
+    position: absolute;
+    top: 120px;
+    left: 70px;
+}
+
+.cover
+{
+    display: block;
+    margin: auto;
+}
+
+footer
+{
+    background-color: lightgrey;
+    font-size: 1.5em;
+    padding-top: 8px;
+}
+
+footer a 
+{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+footer a:hover
+{
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+}
+
+#login, #upload
+{
+    font-size: 1.3em;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    padding: 80px 80px;
+    width: 450px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+#bienvenue
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    padding: 80px 80px;
+    width: 600px;
+}
+
+#informations
+{
+    padding: 40px 100px;
+    font-size: 1.2em;
+}
+
+.button-link
+{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-link .fa-trash, .fa-ban, .fa-gear, .fa-check
+{
+    text-decoration: none;
+    color: black;
+}
+
+.button-link:hover .fa-trash
+{
+    color: rgb(32, 103, 255);
+}
+
+.button-link:hover .fa-ban
+{
+    color: rgb(189, 0, 0);
+}
+
+.button-link:hover .fa-check
+{
+    color: rgb(3, 168, 3);
+}
+
+.button-link:hover .fa-gear
+{
+    color: grey;
+}
+
+
+
+
+
