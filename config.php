@@ -3,7 +3,7 @@
 /*Déclaration des variables*/
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'AT2jgTMEx-cHeIT9');
 define('DB_NAME', 'bibliotheque');
  
 /*Connexion BDD*/

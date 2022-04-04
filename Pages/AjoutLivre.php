@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
         // Définition du chemin de destination (un dossier qui porte le nom du fichier)
         $ds = DIRECTORY_SEPARATOR;
-        $target_path = join($ds, array("C:", "wamp64", "www", "PPE", "Books"));
+        $target_path = join($ds, array("C:", "wamp64", "www", "PPE", "Bibliotheque-Sterling", "Books"));
         $target_path = $target_path.$ds.basename($_FILES['file']['name'], $file_ext).$ds;
 
         // Crée le dossier s'il n'existe pas
@@ -101,7 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $target_path = $target_path.basename($_FILES['cover']['name'], $img_ext).'_'.$n.$img_ext; 
         
         // Définition de la variable, remplacement du chemin absolu par le chemin rélatif
-        $cover = str_replace("C:".$ds."wamp64".$ds."www", "..", $target_path);
+        $cover = str_replace("C:".$ds."wamp64".$ds."www".$ds."PPE", "..", $target_path);
         
         // Copie du fichier vers le chemin de destination
         if(move_uploaded_file($_FILES['cover']['tmp_name'], $target_path)) 
@@ -130,7 +130,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         
         // Définition du chemin de destination (un dossier qui porte le nom du fichier)
         $ds = DIRECTORY_SEPARATOR;
-        $target_path = join($ds, array("C:", "wamp64", "www", "PPE", "Books"));
+        $target_path = join($ds, array("C:", "wamp64", "www", "PPE", "Bibliotheque-Sterling", "Books"));
         $target_path = $target_path.$ds.basename($_FILES['file']['name'], $file_ext).$ds;
 
         // Crée le dossier s'il n'existe pas
@@ -149,7 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $target_path = $target_path.basename($_FILES['file']['name'], $file_ext).'_'.$n.$file_ext; 
         
         // Définition de la variable, remplacement du chemin absolu par le chemin rélatif
-        $file = str_replace("C:".$ds."wamp64".$ds."www", "..", $target_path);
+        $file = str_replace("C:".$ds."wamp64".$ds."www".$ds."PPE", "..", $target_path);
 
         // Copie du fichier vers le chemin de destination
         if(move_uploaded_file($_FILES['file']['tmp_name'], $target_path)) 
