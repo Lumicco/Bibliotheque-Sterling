@@ -165,10 +165,13 @@ catch(PDOException $e)
                             </form>
                         <?php }
                         else
-                        { ?>
-                            <a href="<?php echo htmlspecialchars($row['Fichier']); ?>" download target="_blank">
-                                <button type="button" class="btn btn-info">Emprunter</button>
-                            </a>                      
+                        { ?>                            
+ 
+                            <form id="historique" method="post" action="Pages/emprunt.php">                            
+                                <input type="hidden" name="file" value="<?php echo htmlspecialchars($row['Fichier']); ?>"/>             
+                                <button type="submit" class="btn btn-info" name="id" value="<?php echo htmlspecialchars($row['id']); ?>">
+                                Emprunter</button>
+                            </form>
                         <?php }
                         ?>
                     </div>

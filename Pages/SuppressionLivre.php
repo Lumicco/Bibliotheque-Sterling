@@ -18,7 +18,7 @@ $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 // Execution de la requête préparée
 if ($stmt->execute()) 
 {
-    // Redirection vers page gestion des utilisateurs
+    // Redirection vers page index
     header('Location: ../index.php');
     exit();
 
