@@ -3,7 +3,7 @@
 /*Déclaration des variables*/
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'AT2jgTMEx-cHeIT9');
+define('DB_PASSWORD', 'Sio2022!'); //Mot de passe phpMyAdmin
 define('DB_NAME', 'bibliotheque');
  
 /*Connexion BDD*/
