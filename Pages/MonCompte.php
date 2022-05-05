@@ -3,7 +3,7 @@
 session_start();
 
 // Vérifier si l'utilisateur est connecté et a le role user, redirection vers page login dans ce cas
-if(!isset($_SESSION["loggedin"]) && $_SESSION["role"] !== 'user')
+if(!isset($_SESSION["loggedin"]) || $_SESSION["role"] !== 'user')
 {
     header("location: login.php");
     exit;
@@ -117,7 +117,7 @@ unset($pdo);
                 <!--HEADER-->
                 <header class="row">
                     <nav class="col navbar navbar-expand-lg navbar-dark">
-                        <a href="index.php" class="navbar-brand"><img src="../Images/BiblioLogo.png" class="logo" alt="Logo de la bibliothèque" />Bibliothèque Sterling</a>
+                        <a href="../index.php" class="navbar-brand"><img src="../Images/BiblioLogo.png" class="logo" alt="Logo de la bibliothèque" />Bibliothèque Sterling</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                             <span class="navbar-toggler-icon"></span>
                         </button>

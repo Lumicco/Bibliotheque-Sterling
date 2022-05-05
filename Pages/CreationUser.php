@@ -3,7 +3,7 @@
 require_once "../config.php";
 
 // Vérifier si l'utilisateur est connecté et n'a pas le role admin, redirection vers page login le cas échéant
-if(!isset($_SESSION["loggedin"]) && $_SESSION["role"] !== 'admin')
+if(!isset($_SESSION["loggedin"]) || $_SESSION["role"] !== 'admin')
 {
     header("location: login.php");
     exit;

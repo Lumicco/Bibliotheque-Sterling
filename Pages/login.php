@@ -3,7 +3,7 @@
 session_start();
  
 // Vérifier si l'utilisateur est déjà connecté, dans ce cas redirection vers page bienvenue
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)
+if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] === true)
 {
     header("location: bienvenue.php");
     exit;
